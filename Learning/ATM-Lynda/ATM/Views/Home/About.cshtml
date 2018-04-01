@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="jumbotron">
+    <h1>MB oATM</h1>
+    <p class="lead">Welcome to Mera Bank's online - ATM facility. Enjoy money online!</p>
+    <hr class="my-4">
+</div>
+
+<div class="row body-content">
+    <p>
+        As a premier commercial bank in India, Mera Bank has a distinct track record in the service of the nation for over 111 years. Today, Mera Bank has a strong pan India presence with 6089 branches and 10559 ATMs, catering to all segments of an ever growing clientele accounts base of 7.91 crore. Across the borders, the Bank has 8 branches, one each at London, Leicester, Hong Kong, Shanghai, Manama, Johannesburg, New York and DIFC (Dubai) & a Representative Office at Sharjah, UAE. We are recognized as a leading financial conglomerate in India, with as many as ten subsidiaries/sponsored institutions/joint ventures in India and abroad. In our second century of dedicated service to the nation, we aspire to emerge as a "Preferred Bank" by pursuing global benchmarks in profitability, operational efficiency, asset quality, risk management and expanding the global reach.
+    </p>
+    <p><a class="btn btn-default" href="http://www.canarabank.com/english/about-us/">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Register</h2>
+        <p>Open an account with us</p>
+        <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-6">
+        <h2>Login</h2>
+        <p>Login to Access your account</p>
+        <p>@Html.ActionLink("Log In", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>

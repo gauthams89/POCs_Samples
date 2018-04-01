@@ -1,0 +1,39 @@
+﻿@model ATM.Models.Transaction
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Model.Type == 'd')
+{
+    <h3>Deposit</h3>
+
+}
+else
+{
+    <h3>Withdrawal</h3>
+}
+@using (Html.BeginForm("Index", "Transaction", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+@Html.HiddenFor(model=>model.Type)
+@Html.HiddenFor(model => model.CheckingAccountId)
+    <div class="row">
+        <div class="col-md-2">
+            @if (Model.Type == 'd')
+            {
+            <span>Amount to be Deposited</span>
+            }
+            else
+            {
+            <span>Amount to be Withdrawn</span>
+            }
+        </div>
+        <div class="col-md-3">
+            @Html.TextBoxFor(model => model.Amount)
+        </div>
+    </div>
+    <div class="row">
+        <button type="submit">Save</button>
+    </div>
+}
+

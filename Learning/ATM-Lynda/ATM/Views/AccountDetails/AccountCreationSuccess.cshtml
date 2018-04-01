@@ -1,0 +1,29 @@
+﻿@model ATM.Models.CheckingAccount
+
+@{
+    ViewBag.Title = "AccountCreationSuccess";
+}
+
+<h4>New account created successfully. Account details are as follows</h4>
+<div class="row">
+    <div class="col-md-3">
+        Account Holder
+    </div>
+    <div class="col-md-3">
+        @Html.DisplayFor(m => m.Name)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        Account Number
+    </div>
+    <div class="col-md-3">
+        @Html.DisplayFor(m => m.AccountNumber)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.ActionLink("Home", "Index", "Home")
+    </div>
+</div>
+

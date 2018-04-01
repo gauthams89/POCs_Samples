@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <a class="btn btn-primary btn-block bsButton" href="@Url.Action("Index", "Transaction", new { type="w"})"><span class="glyphicon glyphicon-arrow-down"></span>Withdrawal</a>
+        <a class="btn btn-primary btn-block bsButton" href="#"><span class="glyphicon glyphicon-flash"></span>Quick Cash</a>
+        <a class="btn btn-primary btn-block bsButton" href="@Url.Action("Details", "AccountDetails")"><span class="glyphicon glyphicon-arrow-down"></span>Balance Enquiry</a>
+    </div>
+    <div class="col-md-6">
+        <a class="btn btn-primary btn-block bsButton" href="#"><span class="glyphicon glyphicon-print"></span>Print Statement</a>
+        <a class="btn btn-primary btn-block bsButton" href="#"><span class="glyphicon glyphicon-transfer"></span>Transfer funds</a>
+        <a class="btn btn-primary btn-block bsButton" href="@Url.Action("Index", "Transaction", new { type="d"})"><span class="glyphicon glyphicon-arrow-up"></span>Deposits</a>
+    </div>
+</div> 
